@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Momma Micky's Cakes & Desserts</title>
+  <link rel="stylesheet" href="/css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="cake-icon">🎂</div>
+      <p>Baking something special...</p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-script">Momma Micky's</span>
+        <span class="logo-sub">Cakes & Desserts</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#featured">Specials</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn"><i class="fas fa-shopping-basket"></i><span class="cart-count" id="cartCount">0</span></button>
+        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-slider" id="heroSlider">
+      <div class="slide active">
+        <div class="container-slide">
+          <div class="slide-content">
+          <span class="slide-tag">Freshly Baked Daily</span>
+          <h1>Cakes<br/><em>Made With</em><br/>Love</h1>
+          <p>Indulge in handcrafted cakes and desserts baked fresh using the finest ingredients. Every bite tells a story.</p>
+          <div class="hero-btns">
+            <a href="#menu" class="btn-primary">Explore Menu</a>
+            <a href="#order" class="btn-outline">Order Now</a>
+          </div>
+        </div>
+        <div class="slide-image">
+          <div class="image-blob blob-1">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80" alt="Chocolate Cake"/>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="slide">
+        <div class="container-slide">
+          <div class="slide-content">
+            <span class="slide-tag">Customer Favourite</span>
+            <h1>Cupcakes<br/><em>That Steal</em><br/>The Show</h1>
+            <p>Fluffy, frosted, and fabulous — our cupcakes are baked in small batches so every one is perfect.</p>
+            <div class="hero-btns">
+              <a href="#menu" class="btn-primary">See Cupcakes</a>
+              <a href="#order" class="btn-outline">Order Now</a>
+            </div>
+          </div>
+          <div class="slide-image">
+            <div class="image-blob blob-2">
+              <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?w=500&q=80" alt="Cupcakes"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="container-slide">
+          <div class="slide-content">
+            <span class="slide-tag">Weekend Special</span>
+            <h1>Pastries<br/><em>Warm From</em><br/>The Oven</h1>
+            <p>Golden, flaky, and buttery — our pastries bring warmth to any morning or afternoon treat.</p>
+            <div class="hero-btns">
+              <a href="#menu" class="btn-primary">View Pastries</a>
+              <a href="#order" class="btn-outline">Order Now</a>
+            </div>
+          </div>
+          <div class="slide-image">
+            <div class="image-blob blob-3">
+              <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=500&q=80" alt="Pastries"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots" id="sliderDots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+    <button class="slider-arrow left" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-arrow right" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+    <div class="hero-decor">
+      <span>🍰</span><span>🧁</span><span>🎂</span><span>🍩</span>
+    </div>
+  </section>
+
+  <!-- WELCOME / CATEGORIES -->
+  <section id="menu" class="welcome-section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Offerings</span>
+        <h2>Welcome to Momma Micky's Store</h2>
+        <p>Freshly baked breads, cakes, cookies, and pastries — crafted daily with love and the finest ingredients to make every bite unforgettable.</p>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card" data-filter="cakes">
+          <div class="cat-icon">🎂</div>
+          <h3>Cakes</h3>
+        </div>
+        <div class="category-card" data-filter="brownies">
+          <div class="cat-icon">🍫</div>
+          <h3>Brownies</h3>
+        </div>
+        <div class="category-card" data-filter="cookies">
+          <div class="cat-icon">🍪</div>
+          <h3>Cookies</h3>
+        </div>
+        <div class="category-card" data-filter="bread">
+          <div class="cat-icon">🍞</div>
+          <h3>Bread</h3>
+        </div>
+        <div class="category-card" data-filter="cupcakes">
+          <div class="cat-icon">🧁</div>
+          <h3>Cupcakes</h3>
+        </div>
+        <div class="category-card" data-filter="pastries">
+          <div class="cat-icon">🥐</div>
+          <h3>Pastries</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section reveal">
+    <div class="container about-grid">
+      <div class="about-images">
+        <img class="about-img-main" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80" alt="Momma Micky"/>
+        <img class="about-img-accent" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80" alt="Desserts"/>
+        <div class="about-badge">
+          <span class="badge-num">3+</span>
+          <span class="badge-text">Years of<br/>Baking Joy</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-tag">Our Story</span>
+        <h2>About Momma Micky's Bakery</h2>
+        <p>Momma Micky's started in a tiny home kitchen with one mission — to spread happiness through the art of baking. Every cake, cookie, and loaf is a labour of love, crafted with fresh local ingredients and a generous pour of heart.</p>
+        <p>Today, we serve hundreds of families across the city, bringing the same warmth and quality that Momma Micky herself put into every single batch over years.</p>
+        <div class="about-stats">
+          <div class="stat"><span>300+</span><p>Happy Customers</p></div>
+          <div class="stat"><span>20+</span><p>Menu Items</p></div>
+          <div class="stat"><span>100%</span><p>Natural Ingredients</p></div>
+        </div>
+        <a href="#order" class="btn-primary">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED FOOD / PRODUCT GRID -->
+  <section id="featured" class="featured-section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Fresh Today</span>
+        <h2>Our Featured Desserts</h2>
+        <p>Discover our featured treats — freshly baked, made daily with love.</p>
+      </div>
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-btn active" data-cat="all">All</button>
+        <button class="filter-btn" data-cat="cakes">Cakes</button>
+        <button class="filter-btn" data-cat="cupcakes">Cupcakes</button>
+        <button class="filter-btn" data-cat="cookies">Cookies</button>
+        <button class="filter-btn" data-cat="bread">Bread</button>
+        <button class="filter-btn" data-cat="pastries">Pastries</button>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Injected by JS -->
+      </div>
+      <div class="pagination-btns">
+        <button class="btn-outline" id="prevPage"><i class="fas fa-chevron-left"></i> Previous</button>
+        <button class="btn-primary" id="nextPage">Next <i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST SELLER -->
+  <section class="bestseller-section reveal">
+    <div class="container bestseller-grid">
+      <div class="bestseller-text">
+        <span class="section-tag">🔥 Best Seller</span>
+        <h2>Best Selling Treat This Week!</h2>
+        <div class="price-row">
+          <span class="price">$18.00</span>
+          <div class="stars">★★★★★</div>
+        </div>
+        <p>Our signature Triple Chocolate Fudge Cake is a decades-long favourite — rich cocoa layers, silky ganache frosting, and a molten centre that makes every celebration unforgettable.</p>
+        <ul class="bestseller-features">
+          <li><i class="fas fa-check-circle"></i> Freshly baked to order</li>
+          <li><i class="fas fa-check-circle"></i> Premium Belgian chocolate</li>
+          <li><i class="fas fa-check-circle"></i> Available in 4 sizes</li>
+        </ul>
+        <button class="btn-primary" onclick="addToCartDirect('Triple Chocolate Fudge Cake', 18)">Add to Cart <i class="fas fa-shopping-basket"></i></button>
+      </div>
+      <div class="bestseller-image">
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&q=80" alt="Best Seller Cake"/>
+        <div class="bestseller-ribbon">Best Seller</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APP PROMO -->
+  <section class="app-section reveal">
+    <div class="container app-grid">
+      <div class="app-mockup">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="app-screen-content">
+              <div class="app-header-bar">
+                <span>🎂 Momma Micky's</span>
+              </div>
+              <div class="app-items">
+                <div class="app-item"><span>🎂</span><p>Chocolate Cake<br/><strong>$18</strong></p></div>
+                <div class="app-item"><span>🧁</span><p>Pink Cupcake<br/><strong>$5</strong></p></div>
+                <div class="app-item"><span>🍪</span><p>Choco Cookies<br/><strong>$8</strong></p></div>
+              </div>
+              <div class="app-order-btn">Order Now 🛒</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app-text">
+        <span class="section-tag">Coming Soon</span>
+        <h2>Our App is Almost Ready!</h2>
+        <p>Order your favourite cakes and desserts from anywhere — anytime. The Momma Micky's app is launching soon on the App Store and Google Play.</p>
+        <div class="store-badges">
+          <div class="store-badge"><i class="fab fa-apple"></i><span>App Store</span></div>
+          <div class="store-badge"><i class="fab fa-google-play"></i><span>Google Play</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER SECTION -->
+  <section id="order" class="order-section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Place an Order</span>
+        <h2>Order Your Favourite Treats</h2>
+        <p>Fill in the form below and we'll get your order ready for pickup or delivery.</p>
+      </div>
+      <div class="order-grid">
+        <div class="order-form-wrap">
+          <form id="orderForm" class="order-form">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" id="fname" placeholder="e.g. Millentine Moyo" required/>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" id="fphone" placeholder="+263 788 340 047" required/>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="femail" placeholder="moyomillz@gmail.com"/>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Item</label>
+                <select id="fitem">
+                  <option value="">Select item...</option>
+                  <option>Triple Chocolate Fudge Cake</option>
+                  <option>Strawberry Dream Cake</option>
+                  <option>Vanilla Bean Cupcakes (6 pack)</option>
+                  <option>Choco Chip Cookies (dozen)</option>
+                  <option>Artisan Sourdough Bread</option>
+                  <option>Almond Croissant</option>
+                  <option>Red Velvet Brownie</option>
+                  <option>Custom Order</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Quantity</label>
+                <input type="number" id="fqty" min="1" value="1"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Delivery Method</label>
+              <div class="radio-group">
+                <label class="radio-label"><input type="radio" name="delivery" value="pickup" checked/> Pickup</label>
+                <label class="radio-label"><input type="radio" name="delivery" value="delivery"/> Delivery</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Special Instructions</label>
+              <textarea id="fnotes" placeholder="Any allergies, custom messages, or decoration notes..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">Place Order <i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div class="order-success" id="orderSuccess">
+            <div class="success-icon">🎉</div>
+            <h3>Order Received!</h3>
+            <p>Thank you! We'll confirm your order via phone shortly. Momma Micky can't wait to bake for you!</p>
+            <button class="btn-primary" onclick="resetForm()">Place Another Order</button>
+          </div>
+        </div>
+        <div class="cart-summary">
+          <h3>🛒 Cart Summary</h3>
+          <div id="cartItems" class="cart-items-list"><p class="empty-cart">Your cart is empty.</p></div>
+          <div class="cart-total" id="cartTotal"></div>
+          <div class="order-info-cards">
+            <div class="info-card"><i class="fas fa-clock"></i><div><strong>Hours</strong><p>Mon–Sat: 7am – 7pm<br/>Sun: 8am – 4pm</p></div></div>
+            <div class="info-card"><i class="fas fa-truck"></i><div><strong>Delivery</strong><p>Free over $30<br/>$5 under $30</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section reveal">
+    <div class="container newsletter-inner">
+      <div>
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Never miss a treat! Get exclusive offers, fresh updates, and sweet surprises delivered to your inbox.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email address" required/>
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-script">Momma Micky's</span>
+          <span class="logo-sub">Cakes & Desserts</span>
+        </div>
+        <p>Freshly baked breads, cakes, and treats made daily with love and the finest local ingredients.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#featured">Specials</a></li>
+          <li><a href="#order">Order</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#">Celebration Cakes</a></li>
+          <li><a href="#">Cupcakes</a></li>
+          <li><a href="#">Cookies & Brownies</a></li>
+          <li><a href="#">Pastries & Bread</a></li>
+          <li><a href="#">Custom Orders</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Home Delivery</a></li>
+          <li><a href="#">Store Pickup</a></li>
+          <li><a href="#">Catering</a></li>
+          <li><a href="#">Wedding Cakes</a></li>
+          <li><a href="#">Gift Hampers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li><i class="fas fa-map-marker-alt"></i> 3697 Emganwini, The Taste House</li>
+          <li><i class="fas fa-phone"></i> +263 788 340 047</li>
+          <li><i class="fas fa-envelope"></i> mommamickyscakes@gmail.com</li>
+          <li><i class="fas fa-clock"></i> Mon–Sat: 7am – 7pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Momma Micky's Cakes & Desserts. Made with 🍰 and love.</p>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3>🛒 Your Cart</h3>
+      <button id="closeCart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-drawer-body" id="cartDrawerBody"></div>
+    <div class="cart-drawer-footer">
+      <div class="cart-drawer-total" id="cartDrawerTotal"></div>
+      <a href="#order" class="btn-primary full-width" onclick="document.getElementById('cartDrawer').classList.remove('open')">Proceed to Order</a>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
